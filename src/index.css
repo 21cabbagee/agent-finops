@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #060a08;
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+.glass-panel {
+  background: rgba(11, 19, 14, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(11, 19, 14, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.18);
+}
+
+.glow-finops {
+  box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.35);
+}
