@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import VelocitySpikeAlertBanner from './components/VelocitySpikeAlertBanner';
 import AgentSpendLeaderboard from './components/AgentSpendLeaderboard';
 import ReverseProxyGatewayDeck from './components/ReverseProxyGatewayDeck';
+import OutcomeChart from './components/OutcomeChart';
 import CabModal from './components/CabModal';
 import Footer from './components/Footer';
 import { INITIAL_FINOPS_AGENTS, INITIAL_VELOCITY_ALERTS } from './data/mockFinOpsData';
@@ -96,6 +97,9 @@ export default function App() {
           onOpenCab={() => setIsCabOpen(true)}
           onScrollToSimulator={scrollToSimulator}
         />
+
+        {/* Julien Bek $1:$6 Economic Engine / Larry Ellison SLA Proof */}
+        <OutcomeChart onCtaClick={() => setIsCabOpen(true)} />
 
         {/* Feature 4: Real-Time Velocity Spike Alerts */}
         <VelocitySpikeAlertBanner

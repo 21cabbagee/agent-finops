@@ -1,9 +1,13 @@
 import React from 'react';
 import { DollarSign, ShieldAlert, Zap, TrendingUp, Sparkles, Server, CheckCircle2, AlertOctagon } from 'lucide-react';
+import ParticlesCanvas from './ParticlesCanvas';
 
 export default function Hero({ onOpenCab, onScrollToSimulator }) {
   return (
     <section className="relative pt-12 pb-16 overflow-hidden">
+      {/* Casberry-inspired Particles WebGL Canvas */}
+      <ParticlesCanvas particleColor="16, 185, 129" particleCount={50} />
+
       {/* Background Gradients */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-finops-600/20 via-emerald-500/15 to-teal-500/10 blur-[120px] pointer-events-none rounded-full" />
 
